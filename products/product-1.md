@@ -1,6 +1,7 @@
 ---
-name: "Product 1"
+name: Product 1
 price: "150"
+prices: "150"
 date: 2020-11-30T17:36:10.046Z
 ---
 <!--StartFragment-->
