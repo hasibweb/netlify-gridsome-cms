@@ -10,8 +10,8 @@ module.exports = {
      {
       use: '@gridsome/source-filesystem',
       options: {
-        path: './blog/**/*.md',
-        typeName: 'BlogPost',
+        path: './posts/**/*.md',
+        typeName: 'Posts',
         remark: {
           // remark options
         }

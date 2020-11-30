@@ -1,13 +1,11 @@
 ---
-title: "Blog Post 1"
+title: First Blog Post
+excerpt: first awesome post
+date: 2020-11-30T17:36:10.046Z
 ---
 
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### ~~Heading 5~~
-###### Heading 6
+### My First Awesome Post
+
 ---
 ---
 Lorem ipsum **dolor** sit *amet*, ~~consectetur~~ adipisicing elit. Eveniet ipsa cum nam, dolore iste earum dicta consectetur amet ea necessitatibus commodi libero. Tempore voluptate unde voluptatem aliquid nostrum animi sunt.

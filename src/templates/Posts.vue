@@ -1,16 +1,20 @@
 <template>
-    <Layout>
-        Blog Template
-        <div v-html="$page.post.content" ></div>
+    <Layout>    
+        <h1>{{$page.post.title}}</h1>
+        <sub>{{$page.post.excerpt}}</sub>
+        <div v-html="$page.post.content" />
         
     </Layout>
 </template>
 
 <page-query>
-query Post ($path: String!) {
- post: blogPost(path: $path) {
-    content
+query Post($path: String!) {
+  post: posts(path: $path) {
     id
+    title
+    content
+    title
+    excerpt
   }
 }
 </page-query>

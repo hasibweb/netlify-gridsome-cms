@@ -1,30 +1,26 @@
 <template>
   <Layout>
-    <h1>Hello, world!</h1>
+    <h1>Blog List</h1>
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
-      excepturi labore tempore expedita, et iste tenetur suscipit explicabo!
-      Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <ul class="list-item">
-      <li v-for="post in $page.blogPosts.edges" :key="post.node.id">
-        <g-link :to="post.node.path">{{ post.node.title }}</g-link>
+    <ol>
+      <li v-for="post in $page.posts.edges" :key="post.node.id">
+        <g-link :to="post.node.path">
+          {{post.node.title}}
+        </g-link>
       </li>
-    </ul>
+    </ol>
+   
   </Layout>
 </template>
 
 <page-query>
-query {
-	blogPosts: allBlogPost {
+query Posts {
+  posts: allPosts {
     edges {
-      node {        
-        path
-        excerpt
+      node {
         id
         title
+        path
       }
     }
   }
